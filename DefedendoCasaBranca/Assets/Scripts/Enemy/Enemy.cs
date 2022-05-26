@@ -18,6 +18,8 @@ public class Enemy : MonoBehaviour
     /// The waypoint reference
     /// </summary>
     public Waypoint Waypoint { get; set; }
+
+    public EnemyHealth EnemyHealth { get; set;}
     
     /// <summary>
     /// Returns the current Point Position where this enemy needs to go
@@ -34,6 +36,7 @@ public class Enemy : MonoBehaviour
     {
         _enemyHealth = GetComponent<EnemyHealth>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        EnemyHealth = GetComponent<EnemyHealth>();
         
         _currentWaypointIndex = 0;
         MoveSpeed = moveSpeed;
