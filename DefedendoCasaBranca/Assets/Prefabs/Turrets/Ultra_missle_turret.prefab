@@ -296,8 +296,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpawnPosition: {fileID: 6477109881053333781}
-  delayBtwAttacks: 2
-  damage: 2
+  delayBtwAttacks: 1
+  damage: 100
 --- !u!114 &6477109882140431118
 MonoBehaviour:
   m_ObjectHideFlags: 0
