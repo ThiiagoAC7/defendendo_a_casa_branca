@@ -169,8 +169,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBarPrefab: {fileID: 7010048091291370797, guid: 990f50bc3c95f484580d8b649ec230b0, type: 3}
   barPosition: {fileID: 1533417403734459834}
-  initialHealth: 10
-  maxHealth: 10
+  initialHealth: 50
+  maxHealth: 50
 --- !u!114 &-1172609548292230950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,7 +200,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.43, y: 3.48}
+    oldSize: {x: 2.744, y: 2.784}
     newSize: {x: 3.43, y: 3.48}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

@@ -212,7 +212,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.7, y: 2.79}
+    oldSize: {x: 3.76, y: 2.232}
     newSize: {x: 4.7, y: 2.79}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a9b75f02e9caf3469a9270c5b3b72b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 15
 --- !u!114 &-8694110192006059736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,8 +248,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBarPrefab: {fileID: 7010048091291370797, guid: 990f50bc3c95f484580d8b649ec230b0, type: 3}
   barPosition: {fileID: 1013233315}
-  initialHealth: 10
-  maxHealth: 10
+  initialHealth: 30
+  maxHealth: 30
 --- !u!114 &2513045718267790644
 MonoBehaviour:
   m_ObjectHideFlags: 0
