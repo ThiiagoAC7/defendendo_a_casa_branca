@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71dae17ec90ce482ba92a9a3fba03151, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 2
+  attackRange: 3
 --- !u!114 &9120516887301350423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,7 +212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpawnPosition: {fileID: 9120516885995883649}
-  delayBtwAttacks: 4
+  delayBtwAttacks: 2
   damage: 100
 --- !u!114 &9120516887301350424
 MonoBehaviour:
