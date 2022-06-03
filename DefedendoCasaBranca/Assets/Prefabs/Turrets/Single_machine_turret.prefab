@@ -345,5 +345,5 @@ MonoBehaviour:
   upgradeInitialCost: 50
   upgradeCostIncremental: 30
   damageIncremental: 1
-  delayReduce: 0.01
+  delayReduce: 0.02
   sellPert: 0.5
