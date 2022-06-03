@@ -37,14 +37,14 @@ public class Spawner : MonoBehaviour
 
     private float _spawnTimer;
     private int _enemiesSpawned;
-    private int _enemiesRamaining;
+    private int _enemiesRemaining;
     private Waypoint _waypoint;
 
     private void Start()
     {
         _waypoint = GetComponent<Waypoint>();
 
-        _enemiesRamaining = enemyCount;
+        _enemiesRemaining = enemyCount;
     }
 
     private void Update()
@@ -76,21 +76,31 @@ public class Spawner : MonoBehaviour
 
         int currentWave = LevelManager.Instance.CurrentWave;
 
-        if (currentWave <= 1){
+        if (currentWave <= 2){
             return enemyWave10Pooler;
         }
-        else if (currentWave > 1 && currentWave <=2 ){
+        else if (currentWave%3 == 0 ){
+            enemyCount = 10*currentWave;
             return enemyWave11_20Pooler;
         }
-        else if (currentWave > 2 && currentWave <= 3 ){
+        else if (currentWave%4 == 0 ){
+            enemyCount = 10*currentWave;
+            return enemyWave10Pooler;
+        }
+        else if (currentWave%5 == 0){
+            enemyCount = 10*currentWave;
             return enemyWave21_30Pooler;
         }
-        else if (currentWave > 3 && currentWave <= 4 ){
+        else if (currentWave%6 != 0){
+            enemyCount = 10*currentWave;
             return enemyWave31_40Pooler;
         }
         else
+        {
+            enemyCount = 10*currentWave;
             return enemyWave41_50Pooler;
-        
+        }
+
     }
 
     private float GetSpawnDelay()
@@ -117,15 +127,15 @@ public class Spawner : MonoBehaviour
     private IEnumerator NextWave()
     {
         yield return new WaitForSeconds(delayBtwWaves);
-        _enemiesRamaining = enemyCount;
+        _enemiesRemaining = enemyCount;
         _spawnTimer = 0f;
         _enemiesSpawned = 0;
     }
     
     private void RecordEnemy(Enemy enemy)
     {
-        _enemiesRamaining--;
-        if (_enemiesRamaining <= 0)
+        _enemiesRemaining--;
+        if (_enemiesRemaining <= 0)
         {
             OnWaveCompleted?.Invoke();
             StartCoroutine(NextWave());
