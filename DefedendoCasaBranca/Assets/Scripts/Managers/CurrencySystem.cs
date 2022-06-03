@@ -36,7 +36,7 @@ public class CurrencySystem : Singleton<CurrencySystem>
     }
 
     private void AddCoins(Enemy enemy){
-        AddCoins(1);
+        AddCoins(3);
     }
 
     private void OnEnable() {
