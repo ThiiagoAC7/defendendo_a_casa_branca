@@ -279,9 +279,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgradeInitialCost: 100
-  upgradeCostIncremental: 50
-  damageIncremental: 1.5
-  delayReduce: 0.01
+  upgradeCostIncremental: 100
+  damageIncremental: 5
+  delayReduce: 0.05
   sellPert: 0.5
 --- !u!1 &157237463403458139
 GameObject:
