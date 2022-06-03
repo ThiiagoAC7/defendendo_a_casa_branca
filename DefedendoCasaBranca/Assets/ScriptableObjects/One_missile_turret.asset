@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: One_missile_turret
   m_EditorClassIdentifier: 
   TurretPrefab: {fileID: 9120516887301350428, guid: c7a259f0c11b4f04db8dc075796f0d26, type: 3}
-  TurretShopCost: 20
+  TurretShopCost: 25
   TurretShopSprite: {fileID: 21300000, guid: b88ccae73ba2b3c459de904adce1d132, type: 3}
